@@ -1,0 +1,131 @@
+<!-- <div>
+  <div class="intro section project-hero" fullpage background-image="'assets/images/bg_home.png'">
+    <div class="container transform-translate-align vertical">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="espncw-title">
+            <span class="sr-only">ESPN CreativeWorks</span>
+            <span class="logo-container espncw"></span>
+          </h1>
+        </div>
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <hr class="narrow thick red">
+          <p class="espncw-description">Partnering with ESPN CreativeWorks allows you access to a full service idea center that delivers compelling creative solutions, inspiring our fans to connect with your brand</p>
+          <hr class="narrow thick red">
+          <p class="espncw-tagline hidden-xs">Informed / Authentic / Connected / Efficient / Multi-Screen</p>
+        </div>
+        <div class="col-xs-12 controls-container intro-controls-container">
+          <a class="btn btn-espn btn-espn-default btn-lg btn-block-xs intro-control" ng-click="watchReel()" title="Why Us">Why Us</a>
+          <a class="btn btn-espn btn-espn-default btn-lg btn-block-xs intro-control" ui-sref="projects.list" title="View Work">View Work</a>
+          <a class="btn btn-espn btn-espn-default btn-lg btn-block-xs intro-control" href="http://www.espncms.com/contact-us.html" target="_blank" title="Contact Us">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <scroll-down></scroll-down>
+  </div>
+
+  <div fullpage class="section project-list-item" background-image="project.hero.file.secure_url" ng-repeat="project in projects" resolve="projects">
+    <div class="container transform-translate-align vertical">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="project-tagline espn-title">{{project.tagline}}</h2>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+          <hr class="narrow thick light">
+        </div>
+        <div class="col-xs-12">
+          <p class="project-title">{{project.title}}</p>
+          <div class="controls-container project-controls">
+            <a ui-sref="projects.detail({ id: project.slug })" class="btn btn-espn btn-espn-default btn-lg" title="View Project">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div fullpage class="section location-list" resolve="locations" ng-controller="LocationsListCtrl">
+    <div class="container transform-translate-align vertical">
+      <div class="row locations-container" >
+        <div class="col-xs-12 col-md-4 location-list-item" ng-repeat="_location in locations">
+          <div class="diamond"></div>
+          <h3 class="location-name espn-title">
+            <a ui-sref="locations.detail({ id: _location.slug })" ng-attr-title="_location.name">{{_location.name}}</a>
+          </h3>
+          <hr class="narrower short thick dark center-block">
+          <div class="location-time-container">
+            <span class="location-time">{{_location.currentTime.format('h:mm a')}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div> -->
+
+<ion-view class="home" view-title="Home">
+  <!-- <ion-content> --> 
+    <ion-slide-box ng-class="sliderClass" active-slide="activeSlide" on-slide-changed="slideHasChanged()">
+      <!-- <ion-content> -->
+        <ion-slide background-image="'assets/img/bg_home.png'">
+          <div class="container transform-translate-align vertical">
+            <div class="row">
+              <div class="col">
+                <h1 class="espncw-title">
+                  <span class="logo-container espncw"></span>
+                </h1>
+              </div>
+            </div>
+            <div class="row responsive-sm">
+              <div class="col col-50 col-offset-25">
+                <hr class="narrow thick red">
+                <p class="espncw-description">Partnering with ESPN CreativeWorks allows you access to a full service idea center that delivers compelling creative solutions, inspiring our fans to connect with your brand</p>
+                <hr class="narrow thick red">
+                <p class="espncw-tagline">Informed / Authentic / Connected / Efficient / Multi-Screen</p>
+                <!-- <hr class="narrow thick red"> -->
+              </div>
+            </div>
+            <!--
+            <div class="row responsive-sm ">
+              <div class="col">
+                <a class="button button-outline btn-espn btn-espn-default intro-control" ng-click="watchReel()" title="Why Us">Why Us</a>
+              </div>
+              <div class="col">
+                <a class="button button-outline btn-espn btn-espn-default intro-control" ui-sref="projects.list" title="View Work">View Work</a>
+              </div>
+              <div class="col">
+                <a class="button button-outline btn-espn btn-espn-default intro-control" href="http://www.espncms.com/contact-us.html" target="_blank" title="Contact Us">Contact Us</a>
+              </div>
+            </div>
+            -->
+          </div>
+        </ion-slide>
+        <ion-slide background-image="project.hero.file.secure_url" ng-repeat="project in projects">
+          <div class="container transform-translate-align vertical">
+            <div class="row">
+              <div class="col">
+                <h2 class="project-tagline espn-title">{{project.tagline}}</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-60 col-offset-30">
+                <hr class="narrow thick light">
+              </div>            
+            </div>
+            <div class="row">
+              <div class="col">
+                <p class="project-title">{{project.title}}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="controls-container project-controls">
+                  <a ui-sref="projects.detail({ id: project.slug })" class="button button-outline btn-espn btn-espn-default" title="View Project">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+      <!-- </ion-content> -->
+    </ion-slide-box>
+  <!-- </ion-content> -->
+</ion-view>

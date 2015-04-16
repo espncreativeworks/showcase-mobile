@@ -1,0 +1,41 @@
+// Project specific variables
+$image-path: "/assets/img/";
+
+$logo-espncw-width: 123px;
+$logo-espncw-height: 58px;
+
+$espn-red: #f14237;
+$espn-light: #fff;
+$espn-dark: #000000;
+$espn-neutral: #b7b7b7;
+
+$espn-font-family-sans-serif: "proxima-nova";
+$espn-font-family-headings: "octin-college";
+
+// Bootstrap ports
+$bootstrap-sass-asset-helper: false;
+
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              lighten(#000, 20%) !default;   // #333
+$gray:                   lighten(#000, 33.5%) !default; // #555
+$gray-light:             lighten(#000, 60%) !default;   // #999
+$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+
+// The path to ionicons font files 
+// relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+$font-family-sans-serif:          $espn-font-family-sans-serif, "Helvetica Neue", "Roboto", "Segoe UI", sans-serif !default;
+$font-family-light-sans-serif:    $espn-font-family-sans-serif, "HelveticaNeue-Light", "Roboto-Light", "Segoe UI-Light", sans-serif-light !default;
+$headings-font-family:            $espn-font-family-headings, $font-family-sans-serif;
+
+// Override default colors
+$light:                           $espn-light;
+$stable:                          $espn-neutral;
+$positive:                        #387ef5;
+$calm:                            #11c1f3;
+$balanced:                        #33cd5f;
+$energized:                       #ffc900;
+$assertive:                       $espn-red;
+$royal:                           #886aea;
+$dark:                            $espn-dark;

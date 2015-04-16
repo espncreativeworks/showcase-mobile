@@ -1,0 +1,10 @@
+.project-item {
+  border: none;
+}
+
+.project-list {
+  .item-complex .item-content,
+  .item-radio .item-content {
+    padding-right: $item-padding;
+  }
+}

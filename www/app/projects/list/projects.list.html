@@ -1,0 +1,29 @@
+<!-- <div class="intro section" fullpage background-image="'assets/images/bg_project_list.png'">
+  <div class="container transform-translate-align vertical">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h1 class="espn-title">Work</h1>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <hr class="narrow thick light">
+      </div>
+    </div>
+  </div>
+  <scroll-down></scroll-down>
+</div>
+<div class="projects section">
+  <ng-include src="'app/projects/filter/projects.filter.html'"></ng-include>
+  <div class="container gutterless">
+    <div class="row project-list-container">
+      <project-card project="project" cols="'col-xs-12 col-sm-6 col-md-4'" ng-repeat="project in projects | filter:platformsFilter | filter:sportsFilter | filter:industriesFilter | filter:tagsFilter | filter:filters.term | as:$parent:'filteredProjects'"></project-card>
+    </div>
+  </div>  
+</div> -->
+
+<ion-view view-title="Work">
+  <ion-content class="project-list" padding="false">
+    <ion-item class="project-item" collection-repeat="project in projects" type="item-text-wrap" ui-sref="tabs.projects.detail({ id: project.slug })">
+      <project-card project="project" cols="''"></project-card>
+    </ion-item>
+  </ion-content>
+</ion-view>

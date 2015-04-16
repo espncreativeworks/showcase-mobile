@@ -1,0 +1,8 @@
+// Include variables before Ionic to override default values
+@import "app/variables";
+
+// Include all of Ionic
+@import "www/assets/lib/ionic/scss/ionic";
+
+// Include app
+@import "app/app";

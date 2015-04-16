@@ -1,0 +1,17 @@
+// Global styles
+@import "overrides/overrides";
+@import "mixins/mixins";
+@import "core/core";
+@import "utilities/utilities";
+
+// Components styles
+
+// Home styles
+@import "www/app/home/home";
+
+
+// Projects styles
+@import "www/app/projects/list/projects.list";
+@import "www/app/projects/detail/projects.detail";
+@import "www/app/projects/card/projects.card";
+@import "www/app/projects/card/projects.card.directive";

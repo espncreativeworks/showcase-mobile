@@ -1,0 +1,53 @@
+.project-card-container {
+  $card-image-min-height: 121px;
+  $card-image-max-height: 245px;
+
+  // padding: 10px;
+
+  .card {
+    width: 100%;
+    max-width: 467px;
+    margin: 0 auto;
+  }
+
+  .item-body {
+    padding-bottom: 0;
+  }
+
+  .card-image {
+    background-color: $espn-neutral;
+    min-height: $card-image-min-height;
+    max-height: $card-image-max-height;
+  }
+
+  .card-image-link {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  .card-image.fallback .card-image-link {
+    background-color: darken($espn-light, 15%);
+  }
+
+  .card-body {
+    padding-top: 5px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+  }
+
+  .card-header {
+    font-family: $espn-font-family-headings;
+    text-transform: uppercase;
+    margin: 0 !important;
+  } 
+
+  .card-desc {
+    color: $espn-neutral;
+    font-style: italic;
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,64 @@
+hr {
+  border-style: solid;
+  
+  &.narrow {
+    width: 50%;
+  }
+
+  &.narrower {
+    width: 77%;
+  }
+
+  &.thick {
+    border-top-width: 4px;
+  }
+
+  &.red {
+    border-top-color: $espn-red;
+  }
+
+  &.dark {
+    border-top-color: $gray-dark;
+  }
+
+  &.light {
+    border-top-color: $espn-light;
+  }
+
+  &.neutral {
+    border-top-color: $espn-neutral;
+  }
+
+  &.short {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.espn-title {
+  font-family: $espn-font-family-headings;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.transform-translate-align {
+  position: relative;
+
+  &.absolute {
+    position: absolute;
+  }
+
+  &.vertical {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &.horizontal {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &.horizontal.vertical {
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
