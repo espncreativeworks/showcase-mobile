@@ -64,8 +64,7 @@
 
 <ion-view class="home" view-title="Home">
   <!-- <ion-content> --> 
-    <ion-slide-box ng-class="sliderClass" active-slide="activeSlide" on-slide-changed="slideHasChanged()">
-      <!-- <ion-content> -->
+    <ion-slide-box ng-class="sliderClass" on-slide-changed="slideHasChanged($index)">
         <ion-slide background-image="'assets/img/bg_home.png'">
           <div class="container transform-translate-align vertical">
             <div class="row">
@@ -125,7 +124,6 @@
             </div>
           </div>
         </ion-slide>
-      <!-- </ion-content> -->
     </ion-slide-box>
   <!-- </ion-content> -->
 </ion-view>

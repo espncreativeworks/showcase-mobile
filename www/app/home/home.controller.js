@@ -1,11 +1,19 @@
 'use strict';
 
 angular.module('espnCreativeworksShowcaseApp')
-  .controller('HomeCtrl', ['$scope', 'Project', '$ionicSlideBoxDelegate', function ($scope, Project, $ionicSlideBoxDelegate) {
+  .controller('HomeCtrl', ['$scope', 'Project', '$ionicSlideBoxDelegate', '$ionicLoading', function ($scope, Project, $ionicSlideBoxDelegate, $ionicLoading) {
+
+    $ionicLoading.show();
+
     $scope.projects = Project.featured();
     $scope.projects.$promise.then(function (){
       $ionicSlideBoxDelegate.update();
+      $ionicLoading.hide();
     });
+
+    $scope.initSlider = function (){
+      $ionicSlideBoxDelegate.update();
+    };
 
     $scope.sliderClass = {
       'scroll-content': true, 
@@ -28,8 +36,14 @@ angular.module('espnCreativeworksShowcaseApp')
     //     }
     //   });
     // };
-    $scope.activeSlide = null;
-    $scope.slideHasChanged = function (){
+    $scope.activeSlide = 'intro';
+    $scope.slideHasChanged = function (index){
+      
+      if (index){
+        $scope.activeSlide = $scope.projects[index - 1];  
+      } else {
+        $scope.activeSlide = 'intro';
+      }
       // TODO: track slide view
     };
   }]);
