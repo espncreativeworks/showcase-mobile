@@ -3,7 +3,7 @@
 angular.module('espnCreativeworksShowcaseApp')
   .factory('Project', ['$resource', 'apiUrl', function ($resource, apiUrl) {
     var populate = ['sports', 'hero', 'brands'];
-    return $resource(apiUrl + '/api/projects/:id/:controller', {
+    return $resource(apiUrl + '/projects/:id/:controller', {
       id: '@_id'
     },
     {

@@ -14,7 +14,8 @@ var app = angular.module('espnCreativeworksShowcaseApp', [
   'cloudinary',
   'ngUnderscore'
 ]);
-app.constant('apiUrl', '');
+app.constant('apiUrl', '/api'); 
+// app.constant('apiUrl', 'http://showcase.espncreativeworks.com/api'); 
 app.constant('jQuery', window.jQuery);
 app.constant('Modernizr', window.Modernizr);
 app.constant('async', window.async);
